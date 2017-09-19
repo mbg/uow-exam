@@ -1,0 +1,36 @@
+%-----------------------------------------------------------
+% LaTeX template for University of Warwick exams
+%-----------------------------------------------------------
+
+% load the uow-exam class, the following options are supported:
+% 'answers' shows solutions where specified 
+\documentclass[answers]{uow-exam}
+
+% configure the heading 
+\ModuleCode{CSXXX0}
+\ModuleName{Module name}
+\ExamPeriod{Summer 2018}
+\ExamsName{Second Year Examinations}
+\TimeAllowed{2 hours}
+\QuestionInstructions{Answer \textbf{FOUR} questions.}
+\OtherInstructions{Read carefully the instructions on the answer book and make sure that the particulars required are entered on \textbf{each} answer book. \\
+
+No calculators are allowed.}
+
+\begin{document}
+	\MakeHeading
+	
+	\begin{questions}
+		\question This question is about ...
+		\begin{parts}
+			\part[1] This is a part of a question. \droppoints
+			\begin{solution}
+				This is only generated if the \texttt{answers} option is specified.
+			\end{solution}
+		\end{parts}
+		\question This question is about ...
+		\begin{parts}
+			\part[2] Another part. \droppoints
+		\end{parts}
+	\end{questions}
+\end{document}
