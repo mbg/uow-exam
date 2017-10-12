@@ -84,7 +84,7 @@
 	\renewcommand{\question}{
 		\iftoggle{IsFirstQuestion}
 		{}
-		{\bigskip \hrule \bigskip}
+		{\bigskip \hrule \bigskip \pagebreak}
 		\item
 		\togglefalse{IsFirstQuestion}}
 }
