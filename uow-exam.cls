@@ -22,6 +22,7 @@
 \usepackage{times}
 
 \usepackage{etoolbox}
+\usepackage{titlesec}
 
 % Variables and commands to change them
 \newcommand{\TheModuleCode}{CSXXX0}
@@ -68,9 +69,27 @@
 	
 	\TheOtherInstructions \\
 	
-	\doublehrule \vspace{\smallskipamount}
-	\smallskip
+	\doublehrule % \vspace{\smallskipamount}
+	%\smallskip
 }
+
+\renewcommand{\thesection}{\Alph{section}}
+\titleformat{\section}[hang]{\bigskip
+	\doublehrule
+	\bigskip\pagebreak\bigskip
+	\doublehrule
+	%\bigskip
+	\smallskip
+}{\hspace{-0.8cm} \textbf{Section \thesection} \hspace{1cm}}{0pt}{}[
+\smallskip \smallskip
+%\bigskip 
+\hrule  ]
+\titlespacing{\section}{0pt}{0pt}{6pt}
+
+\newtoggle{BreakAfterQuestion}
+\toggletrue{BreakAfterQuestion}
+
+\newcommand{\NoBreakAfterQuestions}{\togglefalse{BreakAfterQuestion}}
 
 % add lines between questions
 \newtoggle{IsFirstQuestion}
@@ -84,7 +103,7 @@
 	\renewcommand{\question}{
 		\iftoggle{IsFirstQuestion}
 		{}
-		{\bigskip \hrule \bigskip \pagebreak}
+		{\bigskip \hrule  \iftoggle{BreakAfterQuestion}{\bigskip\pagebreak}{}}
 		\item
 		\togglefalse{IsFirstQuestion}}
 }
@@ -92,7 +111,7 @@
 \let\oldquestionsend\endquestions 
 \def\endquestions{
 	\oldquestionsend 	
-	\bigskip
+	%\bigskip
 	\doublehrule
 	\bigskip
 }
