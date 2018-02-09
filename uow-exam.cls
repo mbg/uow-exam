@@ -44,7 +44,7 @@
 % Headers and footers
 \pagestyle{headandfoot}
 
-\header{\textbf{\TheModuleCode}}{}{\textbf{\TheExamPeriod}}
+\header{\textbf{\TheModuleCode}}{\ifprintanswers \textbf{SOLUTIONS} \else \fi}{\textbf{\TheExamPeriod}}
 \footer{}{-~\thepage~-}{ \iflastpage{End}{Continued}}
 
 % No indentation
