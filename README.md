@@ -4,6 +4,7 @@ This is a LaTeX document class for University of Warwick exam papers based on th
 
 * Automatic generation of the standard Warwick exam cover page (configurable)
 * Automatic dividers between questions and sections
+* Automatic headers and footers
 * Enabling/disabling solutions with an option
 
 For comprehensive examples of how to use this document class, see `sample-standard.tex` or `sample-sections.tex`.
@@ -19,6 +20,7 @@ The `uow-exam.cls` file contains the document class. Place this file in the same
 The document class supports the following options:
 
 * `answers` - render answers typeset in `solution` environments, see the documentation for the `exam` document class or the example below.
+* `aep` - for an AEP style exam cover page, see `sample-aep.tex`
 
 The exam cover page can be configured by setting the following options in the preamble to the desired values:
 ```tex

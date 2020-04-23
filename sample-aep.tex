@@ -1,0 +1,42 @@
+%-----------------------------------------------------------
+% LaTeX template for University of Warwick exams
+%-----------------------------------------------------------
+
+% load the uow-exam class, the following options are supported:
+% 'answers' shows solutions where specified 
+\documentclass[answers, aep]{uow-exam}
+
+% configure the heading 
+\ModuleCode{CSXXX0}
+\ModuleName{MODULE NAME} % for aep, this should be all caps
+\ExamPeriod{Summer 2020}  
+% for aep, this should just be the level number:
+% 4 - first year UG
+% 5 - second year UG
+% 6 - third year UG
+% 7 - fourth year UG / MSc
+\ExamsName{5}
+\TimeAllowed{2 hours} % either 2 hours or 3 hours
+\QuestionInstructions{Answer \textbf{FOUR} questions.}
+\OtherInstructions{Read all instructions carefully – and read through the entire paper at least once before you start writing.}
+
+% use this if your exam paper contains sections or comment it out otherwise
+\NoBreakAfterQuestions
+
+\begin{document}
+	\MakeHeading
+	
+	\begin{questions}
+		\question This question is about ...
+		\begin{parts}
+			\part[1] This is a part of a question. \droppoints
+			\begin{solution}
+				This is only generated if the \texttt{answers} option is specified.
+			\end{solution}
+		\end{parts}
+		\question This question is about ...
+		\begin{parts}
+			\part[2] Another part. \droppoints
+		\end{parts}
+	\end{questions}
+\end{document}
