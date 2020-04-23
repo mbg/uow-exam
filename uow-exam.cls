@@ -69,7 +69,7 @@
 	
 	\TheOtherInstructions \\
 	
-	\doublehrule % \vspace{\smallskipamount}
+	\doublehrule \pagebreak % \vspace{\smallskipamount}
 	%\smallskip
 }
 
