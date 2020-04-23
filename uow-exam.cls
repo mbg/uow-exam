@@ -44,7 +44,7 @@
 % Headers and footers
 \pagestyle{headandfoot}
 
-\header{\textbf{\TheModuleCode}}{\ifprintanswers \textbf{SOLUTIONS} \else \fi}{\textbf{\TheExamPeriod}}
+\header{\textbf{\TheModuleCode}}{\ifprintanswers \textbf{\color{red!50} SOLUTIONS} \else \fi}{\textbf{\TheExamPeriod}}
 \footer{}{-~\thepage~-}{ \iflastpage{End}{Continued}}
 
 % No indentation
@@ -115,3 +115,5 @@
 	\doublehrule
 	\bigskip
 }
+
+\usepackage{xcolor}
