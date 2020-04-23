@@ -34,6 +34,8 @@ The exam cover page can be configured by setting the following options in the pr
 
 No calculators are allowed.}
 ```
+If you would like each question to start immediately after the previous, you can use the `\NoBreakAfterQuestions` command in the preamble. Otherwise, if this command is not specified, questions will start on a new page.
+
 An example of a document body is below. This largely uses environments from the `exam` document class. The `\MakeHeading` command generates the exam cover page.
 ```tex
 \begin{document}
