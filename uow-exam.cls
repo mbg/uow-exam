@@ -130,7 +130,7 @@
 
 		Please note that technical support is only available between 9AM and 5PM (BST).\\[0.5em]
 
-		Invigilator support will be also be available (via the AEP) between 9AM and 5PM (BST).\\[1em]
+		Invigilator support will be available at the start of the assessment period (via the AEP) for the duration of the assessment (\TheTimeAllowed).\\[1em]
 
 		\textbf{\underline{Notify dcs.exams@warwick.ac.uk as soon as possible if you cannot}\\\underline{complete your assessment because}}:\\
 		\begin{itemize}[nosep,after=\vspace{-\baselineskip},before=\vspace{0.5\baselineskip}]
