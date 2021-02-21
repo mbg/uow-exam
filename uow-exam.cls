@@ -22,6 +22,11 @@
 	\toggletrue{UseMinted}
 }
 
+\newtoggle{UsePalatino}
+\DeclareOption{palatino}{
+	\toggletrue{UsePalatino}
+}
+
 %% Process given options
 \ProcessOptions\relax
 
@@ -51,6 +56,13 @@
 	]{mdframed}
 
 	\usepackage[]{FiraSans}
+}{}
+
+\iftoggle{UsePalatino}{
+	% change the font
+	\usepackage{mathpazo}
+	\linespread{1.05}
+	\usepackage[T1]{fontenc}
 }{}
 
 % Variables and commands to change them
