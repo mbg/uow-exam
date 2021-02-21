@@ -20,6 +20,7 @@ The `uow-exam.cls` file contains the document class. Place this file in the same
 The document class supports the following options:
 
 * `answers` - render answers typeset in `solution` environments, see the documentation for the `exam` document class or the example below.
+* `code` - loads the `minted` package with some sensible defaults for exam papers.
 * `aep` - for an AEP style exam cover page, see `sample-aep.tex`
 
 The exam cover page can be configured by setting the following options in the preamble to the desired values:

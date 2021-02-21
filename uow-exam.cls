@@ -1,10 +1,10 @@
-%-----------------------------------------------------------
+%------------------------------------------------------------------------------
 % LaTeX class for University of Warwick exams
-% Copyright 2017 Michael B. Gale (m.gale@warwick.ac.uk)
-%-----------------------------------------------------------
+% Copyright 2017-2021 Michael B. Gale (m.gale@warwick.ac.uk)
+%------------------------------------------------------------------------------
 
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{uow-exam}[2017/09/19 UoW Exam Class]
+\ProvidesClass{uow-exam}[2021/02/21 UoW Exam Class]
 
 \usepackage{etoolbox}
 
@@ -15,6 +15,11 @@
 \newtoggle{AEP}
 \DeclareOption{aep}{
 	\toggletrue{AEP}
+}
+
+\newtoggle{UseMinted}
+\DeclareOption{code}{
+	\toggletrue{UseMinted}
 }
 
 %% Process given options
@@ -31,6 +36,21 @@
 \usepackage{titlesec}
 \usepackage{longtable}
 \usepackage{enumitem}
+
+\iftoggle{UseMinted}{
+	% load minted; don't load framed though
+	\makeatletter
+	\@namedef{ver@framed.sty}{9999/12/31}
+	\@namedef{opt@framed.sty}{}
+	\makeatother
+	\usepackage{minted}
+	\usepackage[
+	backgroundcolor = white
+	, hidealllines=true
+	]{mdframed}
+
+	\usepackage[]{FiraSans}
+}{}
 
 % Variables and commands to change them
 \newcommand{\TheModuleCode}{CSXXX0}
