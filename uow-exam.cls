@@ -41,7 +41,7 @@
 \usepackage{titlesec}
 \usepackage{longtable}
 \usepackage{tabularx}
-\usepackage{enumitem}
+\usepackage{soul}
 
 \iftoggle{UseMinted}{
 	% load minted; don't load framed though
@@ -121,12 +121,12 @@
 		\textbf{Instructions for students}
 
 		\begin{enumerate}
-			\item \underline{Read all instructions carefully.} We recommend you read through the entire paper at least once before writing. 
+			\item \ul{Read all instructions carefully.} We recommend you read through the entire paper at least once before writing. 
 			\item \TheQuestionInstructions
 			\item You should not submit answers to more than the required number of questions.
 			\item You should handwrite your answers either with paper and pen or using an electronic device with a stylus (unless you have special arrangements for exams which allow the use of a computer). Start each question on a new page and clearly mark each page with the page number, your student id and the question number. Handwritten notes must be scanned or photographed and all individual solutions collated into a single PDF with pages in the correct order. 
 			\item Please ensure that all your handwritten answers are written legibly, preferably in dark blue or black ink. If you use a pencil ensure that it is not too faint to be captured by a scan or photograph.
-			\item Please check for legibility before uploading. \underline{It is your responsibility to ensure} \underline{your work can be read}.
+			\item Please check for legibility before uploading. \ul{It is your responsibility to ensure your work can be read}.
 			\item  Add your student number to all uploaded files.
 			\item You are permitted to access module materials, notes, resources, references and the Internet during the online assessment.
 			\item You must not communicate with any other candidate during the assessment period or seek assistance from anyone else in completing your answers. The Computer Science Department expects the conduct of all students taking this assessment to conform to the stated requirements. Measures will be in operation to check for possible misconduct. These will include the use of similarity detection tools and the right to require live interviews with selected students following the assessment.
