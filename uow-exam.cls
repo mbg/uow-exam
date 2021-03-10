@@ -7,6 +7,7 @@
 \ProvidesClass{uow-exam}[2021/02/21 UoW Exam Class]
 
 \usepackage{etoolbox}
+\usepackage{lastpage}
 
 \DeclareOption{answers}{
 	\PassOptionsToClass{\CurrentOption}{exam}
@@ -90,7 +91,7 @@
 \pagestyle{headandfoot}
 
 \header{\textbf{\TheExamCode}}{\ifprintanswers \textbf{\color{red!50} SOLUTIONS} \else \fi}{\textbf{\TheExamPeriod}}
-\footer{}{-~\thepage~-}{ \iflastpage{End}{Continued}}
+\footer{}{-~\thepage\ of \pageref{LastPage}~-}{ \iflastpage{End}{Continued}}
 
 % No indentation
 \setlength{\parindent}{0mm}
