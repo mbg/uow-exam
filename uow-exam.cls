@@ -163,12 +163,12 @@
 			\item[] Technical Support:
 				\begin{itemize}
 					\item If you experience any technical difficulties with the Alternative Exam Portal please contact \textit{helpdesk@warwick.ac.uk}.
-					\item Technical support will be available between 09:00 and 17:00 GMT for each examination (excluding Sunday).
+					\item Technical support will be available between 09:00 and 17:00 BST for each examination (excluding Sunday).
 				\end{itemize}
 			\item[] Academic Support:
 				\begin{itemize}
 					\item If you have an academic query, contact the invigilator (using the ``Contact an Invigilator'' tool in AEP) to raise your issue. Please be aware that two-way communication in AEP is not currently possible.
-					\item Academic support will normally be provided for the duration of the examination (i.e. for a 2 hour exam starting at 09:00 GMT, academic support will normally be provided between 09:00 and 11:45 GMT). Academic support beyond this time is at the discretion of the department.
+					\item Academic support will normally be provided for the duration of the examination (i.e. for a 2 hour exam starting at 09:00 BST, academic support will normally be provided between 09:00 and 11:45 BST). Academic support beyond this time is at the discretion of the department.
 				\end{itemize}
 			\item[] Other Support:
 				\begin{itemize}
